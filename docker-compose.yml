@@ -1,0 +1,11 @@
+services:
+  db:
+    container_name: xet_db
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgrespwd
+      - POSTGRES_DB=xet_db
